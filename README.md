@@ -1,5 +1,8 @@
+# All credits due to Blain Murphy (https://gitlab.com/unixispower/jcard-template)
+I only modified his code a bit for my own purposes.
+
 # J-Card Template
-[Printable in-browser template](https://unixispower.gitlab.io/jcard-template/)
+[Printable in-browser template](https://phantomlordm.github.io/jcard-double/)
 for cassette tape J-Cards built using [Jekyll](https://jekyllrb.com/) and
 hosted using [GitLab Pages](https://docs.gitlab.com/ee/user/project/pages/).
 
