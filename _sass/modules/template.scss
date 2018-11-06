@@ -125,8 +125,9 @@ $template-track-line-height: 1.2;
     }
 	&-cover2 {
         display: block;
-		margin-left: auto;
-		margin-right: auto;
+//		margin-left: auto;
+//		margin-right: auto;
+		margin-left: 1.325cm;
 		margin-top: 0.1in;
 		margin-bottom: 0.1in;
         width: 4cm;
@@ -136,7 +137,9 @@ $template-track-line-height: 1.2;
     &-front-group {
         $template-front-group-height: 1.2cm;
         display: table-cell;
-        width: $template-front-width;
+	margin-left: 0cm
+ //       width: $template-front-width;
+	width: 6.25cm;	
 		height: 1.2cm;
 		vertical-align: middle;
 		text-align: center;
