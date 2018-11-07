@@ -25,9 +25,9 @@ var jcard = (function() {
             noteLower:  controls.querySelector('#controls-note-lower'),
             noteSize:   controls.querySelector('#controls-note-size'),
 
-//            sideA:      controls.querySelector('#controls-side-a'),
-//            sideB:      controls.querySelector('#controls-side-b'),
-//            trackSize:  controls.querySelector('#controls-track-size'),
+ //           sideA:      controls.querySelector('#controls-side-a'),
+ //           sideB:      controls.querySelector('#controls-side-b'),
+ //           trackSize:  controls.querySelector('#controls-track-size'),
             backSize:   controls.querySelector('#controls-back-size')
         }
     }
@@ -40,8 +40,8 @@ var jcard = (function() {
             cover:          template.querySelector('.template-cover'),
             cover2:         template.querySelector('.template-cover2'),
             titleGroups:    [
-                template.querySelector('.template-front-title-group'),
-                template.querySelector('.template-spine-title-group')],
+                template.querySelector('.template-front-title-group')],
+//                template.querySelector('.template-spine-title-group')],
             titles:         [
                 template.querySelector('.template-front-title'),
                 template.querySelector('.template-spine-title')],    
@@ -54,8 +54,9 @@ var jcard = (function() {
             noteUpper:      template.querySelector('.template-note-upper'),
             noteLower:      template.querySelector('.template-note-lower'),
             sideA:          template.querySelector('.template-side-a'),
-            sideB:          template.querySelector('.template-side-b')
-        }
+            sideB:          template.querySelector('.template-side-b'),
+			sPine:			template.querySelector('.template-spine-title-group') 
+ }
     }
 
     // add listeners to inputs that toggle option classes
@@ -89,6 +90,7 @@ var jcard = (function() {
         addTextListener(inputs.noteUpper, outputs.noteUpper);
         addTextListener(inputs.noteLower, outputs.noteLower);
         addSizeListener(inputs.noteSize, outputs.noteGroup);
+		addSizeListener(inputs.noteSize, outputs.sPine);
 
         addSideListener(inputs.title, outputs.sideA);
         addSideListener(inputs.subtitle, outputs.sideB);
@@ -109,7 +111,7 @@ var jcard = (function() {
         inputs.subtitle.value = fields.subtitle || '';
         inputs.titleSize.value = fields.title_size || 8;
 
-//        inputs.type.value = fields.type || '               ';
+//        inputs.type.value = fields.type || '               ';
 //        inputs.typeSize.value = fields.type_size || 8;
 
         inputs.noteUpper.value = fields.note_upper || 'Kenwood';
