@@ -38,10 +38,11 @@
             </div>
             <div class="columns-column">
                 {% include modules/field.html id="controls-title-size" type="number" attrs='min="0" step="0.1"' label="Title Size" %}
+		{% include modules/field.html id="controls-back-size" type="number" attrs='min="0" step="0.1"' label="Back Size" %}    
             </div>
         </div>
         <hr/>
-        <div class="columns">
+<!--        <div class="columns">
             <div class="columns-column-2">
                 {% include modules/field.html id="controls-type" type="text" label="Invisible Characters" %}
             </div>
@@ -50,7 +51,8 @@
             </div>
         </div>
         <hr/>
-        <div class="columns">
+-->
+	<div class="columns">
             <div class="columns-column-2">
                 {% include modules/field.html id="controls-note-upper" type="text" label="Deck" %}
                 {% include modules/field.html id="controls-note-lower" type="text" label="Deck" %}
@@ -59,7 +61,7 @@
                 {% include modules/field.html id="controls-note-size" type="number" attrs='min="0" step="0.1"' label="Note Size" %}
             </div>
         </div>
-        <hr/>
+<!--        <hr/>
         <div class="columns">
             <div class="columns-column-2">
                 {% include modules/field.html id="controls-side-a" type="textarea" label="" %}
@@ -70,5 +72,6 @@
                 {% include modules/field.html id="controls-back-size" type="number" attrs='min="0" step="0.1"' label="" %}
             </div>
         </div>
+-->
     </fieldset>
 </form>
