@@ -11,11 +11,21 @@
         <legend>Options</legend>
         <div class="columns">
             <div class="columns-column-2">
-				{% include modules/field.html id="controls-cover" type="file" attrs='accept="image/*"' label="Cover" %}
-		    		{% include modules/field.html id="controls-cover2" type="file" attrs='accept="image/*"' label="Cover2" %}
+				<div class="columns">
+					<div class="columns-column">
+						{% include modules/field.html id="controls-cover" type="file" attrs='accept="image/*"' label="Cover" %}
+					</div>
+					<div class="columns-column">
+						{% include modules/field.html id="controls-cover2" type="file" attrs='accept="image/*"' label="Cover 2" %}
+					</div>
+				</div>	
 		<hr/>
-                {% include modules/field.html id="controls-title" type="text" label="Album 1" %}
-		{% include modules/field.html id="controls-subtitle" type="text" label="Album 2" %}   
+			</div>
+		</div>		
+        <div class="columns">
+            <div class="columns-column-2">
+				{% include modules/field.html id="controls-title" type="text" label="Album 1" %}
+				{% include modules/field.html id="controls-subtitle" type="text" label="Album 2" %}   
 <!--                {% include modules/field.html id="controls-subtitle" type="text" label="" %}
 -->
             </div>
