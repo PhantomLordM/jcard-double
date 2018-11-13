@@ -7,7 +7,7 @@ $template-back-width: 1in;
 $template-short-back-width: 0.6in;
 $template-spine-width: 0.5in;
 //$template-front-width: 6.65cm;
-$template-front-width: 12.15cm;
+$template-front-width: 11.95cm;
 $template-panel-medium-padding: 0.15in;
 $template-panel-small-padding: 0.05in;
 
@@ -24,7 +24,7 @@ $template-track-line-height: 1.2;
     $template-width: $template-back-width + $template-spine-width + $template-front-width;
     $template-fold-1-pos: $template-back-width;
     $template-fold-2-pos: $template-back-width + $template-spine-width;
-    $template-fold-3-pos: $template-back-width + $template-spine-width + 6.65cm;
+    $template-fold-3-pos: $template-back-width + $template-spine-width + 6.63cm;
 
     width: $template-width;
     height: $template-height;
@@ -118,7 +118,7 @@ $template-track-line-height: 1.2;
     &-cover {
         display: block;
 		margin-top: 0.1in;
-	   	margin-left: 1.325cm;
+	   	margin-left: 1.125cm;
         width: 4cm;
         height: 4cm;
         object-fit: cover;
@@ -126,7 +126,7 @@ $template-track-line-height: 1.2;
     }
 	&-cover2 {
         display: block;
-		margin-left: 1.325cm;
+		margin-left: 1.125cm;
 		margin-top: 0.1in;
 		margin-bottom: 0.1in;
         width: 4cm;
